@@ -7,7 +7,7 @@ resource "aws_instance" "bastion" {
         
         var.common_tags,
         {
-            Name = "${local.name_prefix}-bastion"
+            Name = "${local.resource_name}-bastion"
         }
     )
 }
